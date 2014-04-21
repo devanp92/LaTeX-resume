@@ -1,49 +1,35 @@
 \documentclass[11pt]{article}
-
+%Compile with LuaLaTeX
 \usepackage[margin=.5in]{geometry}
 \usepackage{amsmath}
 \usepackage{amssymb}
 \usepackage{marvosym}
 \usepackage{fix-cm}
-
-% font loading
 \usepackage{fontspec}	
-%\usepackage[scaled=1.03]{inconsolata}
-
-% other packages for XeTeX
 \usepackage{xunicode,xltxtra}
-
-% custom \section
 \usepackage{titlesec}
+\usepackage{fontawesome}
 
 \raggedright
 \pagestyle{empty}
-
-% Fonts
 \defaultfontfeatures{Mapping=tex-text}
-%\setmonofont[Scale=1]{Inconsolata}
-%\setmainfont[SmallCapsFont = Fontin SmallCaps]{Fontin}
-
-% Tweak section
-% \titleformat{<command>}[<shape>]{<format>}                  {<label>}{<sep>}{<before>}{<after>}
 \titleformat  {\section}          {\large\scshape\raggedright}{}       {0em}  {}        [\titlerule]
 \titlespacing{\section}{0pt}{3pt}{3pt}
 
 % Command Definitions
-
+\newfontfamily{\FA}{FontAwesome}
 \newcommand{\employer}[4]
 	{{ \begin{tabular}{l@{\hspace{5mm}}|p{30mm}}
 	   \multicolumn{1}{l}{\textbf{#1 $\circ$ }#2}&\multicolumn{1}{p{30mm}}{\hspace{-3mm}\textsc{#3}} \\
 	   \parbox{.825\textwidth}{#4 \vspace*{-4pt}}
 	   \end{tabular} \vspace{4pt} }}
 	   
-	   
 
-\newcommand{\contact}[4]
+\newcommand{\contact}[5]
 	{\begin{center}
 		{\LARGE \scshape{#1}}\\
 		#2\\
-		\Telefon \hspace{0.5ex} #3 \hspace{1em} \Letter \hspace{0.5ex} #4
+		\Telefon \hspace{0.5ex} #3 \hspace{1em} \Letter \hspace{0.5ex} #4 \hspace{1em} \faGithub \hspace{0.5ex} #5
 	\end{center}
 	\vspace*{-8pt}}
 
@@ -75,7 +61,7 @@
 {6050 NW 91\textsuperscript{th} Ave, Parkland FL 33067}
 {954.695.2250}
 {devanp92@ufl.edu}
-
+{devanp92}
 % Experience
 \section{Experience}
 \employer{Goldman Sachs Group, Inc.}{Technology Anaylst Intern, New York, NY}{2013 - 2013}{
@@ -132,7 +118,7 @@
 \schoolwithcourses{B.S. Computer Science Engineering, Minor in Mathematics}{University of Florida}{Gainesville, FL}{Expected Graduation: Spring 2015}{
 \begin{courses}
 	\course{Computer Science}{Data Structures and Algorithms$\cdot$ Database and Information Systems$\cdot$ Object Oriented Principles$\cdot$ Concurrent Programming $\cdot$ Computer Organization}
-	\course{Mathematics}{Multivariable Calculus $\cdot$ Complex Analysis $\cdot$ Linear Algebra$\cdot$ Differential Equations}
+	\course{Mathematics}{Multivariable Calculus $\cdot$ Complex Analysis $\cdot$ Analysis $\cdot$ Abstract Algebra}
 \end{courses}}
 
 
