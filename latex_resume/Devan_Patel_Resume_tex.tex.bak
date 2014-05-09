@@ -1,0 +1,130 @@
+%Compile with LuaLaTeX
+\documentclass[11pt]{article}
+\usepackage[margin=.5in]{geometry}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{marvosym}
+\usepackage{fix-cm}
+\usepackage{fontspec}	
+\usepackage{xunicode,xltxtra}
+\usepackage{titlesec}
+\usepackage{fontawesome}
+
+\raggedright
+\pagestyle{empty}
+\defaultfontfeatures{Mapping=tex-text}
+\titleformat  {\section}          {\large\scshape\raggedright}{}       {0em}  {}        [\titlerule]
+\titlespacing{\section}{0pt}{3pt}{3pt}
+
+% Command Definitions
+\newfontfamily{\FA}{FontAwesome}
+\newcommand{\employer}[4]
+	{{ \begin{tabular}{l@{\hspace{5mm}}|p{30mm}}
+	   \multicolumn{1}{l}{\textbf{#1 $\circ$ }#2}&\multicolumn{1}{p{30mm}}{\hspace{-3mm}\textsc{#3}} \\
+	   \parbox{.825\textwidth}{#4 \vspace*{-4pt}}
+	   \end{tabular} \vspace{4pt} }}
+	   
+
+\newcommand{\contact}[5]
+	{\begin{center}
+		{\LARGE \scshape{#1}}\\
+		#2\\
+		\Telefon \hspace{0.5ex} #3 \hspace{1em} \Letter \hspace{0.5ex} #4 \hspace{1em} \faGithub \hspace{0.5ex} #5
+	\end{center}
+	\vspace*{-8pt}}
+
+\newenvironment{achievements}           % ↓ was 2pt
+	{\begin{list}{$\cdot$}{\topsep 0pt \itemsep 4pt \parsep 0pt \leftmargin 1em}
+	 \linespread{1.05} \selectfont % for spreading out all lines
+	}
+	{\end{list}\vspace*{4pt}}
+
+\newenvironment{courses}
+	{\begin{list}{}{\topsep 0pt \itemsep 0pt}}
+	{\vspace*{4pt}\end{list}}
+
+\newcommand{\course}[2]
+	{\item \textbf{#1}: #2}
+
+\newcommand{\schoolwithcourses}[5]
+	{\textbf{#1} $\circ$ #2 $\circ$ #3 $\circ$ #4 \\ \begin{achievements}\item{Selected Coursework:\\#5}\end{achievements}}
+
+\newcommand{\school}[4]
+	{\textbf{#1} #2 $\circ$ #3 $\circ$ #4\\ \vspace*{5pt}}
+ 
+\def\Cpp{{C\nolinebreak[4]\hspace{-.05em}\raisebox{.4ex}{\tiny\bf ++}}}
+\def\kt{\vspace*{2pt}\\\textsc{Technologies:\,}}
+
+\begin{document}
+
+\contact{Devan Patel}
+{6050 NW 91\textsuperscript{st} Ave, Parkland FL 33067}
+{954.695.2250}
+{devanp92@ufl.edu}
+{devanp92}
+% Experience
+\section{Experience}
+\employer{Goldman Sachs Group, Inc.}{Technology Anaylst Intern, New York, NY}{2013 - 2013}{
+	\begin{achievements}
+	
+	\item{Designed, implemented, and tested a suite to analyze, monitor, and predict database and run-time performance metrics. Developed graphic representations and statistical analysis to display metadata history.}
+		
+	\item{Worked alongside global Operations Technology teams to integrate my project cross divisionally using proprietary APIs.\kt Java, JDBC, Groovy, R, JUnit, Maven, DB2, R, JMX, JConsole}
+
+	\end{achievements} 
+}
+
+
+\employer{Pinch a Penny}{Freelance Software Engineer, Coconut Creek, FL}{2013 - present}{
+	\begin{achievements}
+	
+	\item{Developed proprietary Android applications that enables pool servicers to connect to remote PostgreSQL database allowing CRUD functionality on client information. }
+	
+	\item{Created Groovy command line scripts to retrieve customer information and send to servicers via SMS messaging.  \kt Java, Android, Ruby, Groovy, PostgreSQL, JUnit, Apache Email Commons, HTML5, CSS, Rails, Git}
+	
+	\end{achievements}
+}
+
+\employer{Follow Your Food!}{Owner and Lead Developer, Gainesville, FL}{2013 - present}{
+	\begin{achievements}
+	
+	\item{Leading a team of student developers to design an interactive recipe application to track food preparation. Code will eventually target the Android OS.}
+	
+	\item{Designing an SQLite database to store recipes for many ethnic dishes as well as maintain history and substitutes for ingredients.\kt Java, Android, Hibrenate, SQLite3, Ruby, Rails, HTML5, CSS, JUnit, Git}
+	
+	\end{achievements}
+}
+
+\employer{UF InfoSec/Programming Team}{Team Member, Gainesville, FL}{2011 - 2012}{
+	\begin{achievements}
+	
+	\item{Implemented various exploits in network programming including socket programming and network sniffing.}
+
+\item{Studied algorithms and analytical thinking heavily in preparation to compete at collegiate competitions. 
+\kt C, C++, Python, Java, x86 Intel Assembly, Metasploit, BackTrack}
+	
+	\end{achievements}
+}
+
+\employer{UF Dance Marathon}{Hospitality Captain, Gainesville, FL}{2011 - present} {
+	\begin{achievements}
+	
+	\item{Collectively raised over \$750,000 in donations for the Children’s Miracle Network. Lead a team of thirty student volunteers in planning, soliciting, and serving meals to 800+ dancers. Personally marketed and collected \$20,000 in food donations.}
+
+	\end{achievements}
+}
+
+% Education
+\section{Education}
+
+\schoolwithcourses{B.S. Computer Science Engineering, Minor in Mathematics}{University of Florida}{Gainesville, FL}{Expected Graduation: Spring 2015}{
+\begin{courses}
+	\course{Computer Science}{Data Structures and Algorithms $\cdot$ Database and Information Systems $\cdot$ Object Oriented Principles $\cdot$ Concurrent Programming $\cdot$ Computer Organization}
+	\course{Mathematics}{Multivariable Calculus $\cdot$ Complex Analysis $\cdot$ Analysis $\cdot$ Abstract Algebra}
+\end{courses}}
+
+
+
+\school{Deerfield Beach High School}{Deerfield Beach, FL}{International Baccalaureate}{Spring 2010}
+
+\end{document}
