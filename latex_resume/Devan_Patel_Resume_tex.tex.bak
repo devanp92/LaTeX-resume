@@ -64,23 +64,35 @@
 {devanp92}
 % Experience
 \section{Experience}
+
+\employer{Nodeware, Inc.}{Founder and Lead Developer, Coral Springs, FL}{2013 - present}{
+\begin{achievements}
+
+\item{Consulting clients by developing proprietary applications specializing in SOA architectures.}
+
+\item{Creating full stack enterprise web applications hosted on Heroku servers. \kt Ruby, Rails, Javascript, Node.js, Angular.js, CSS, HTML5, PostgreSQL, Heroku, Git}
+
+\end{achievements} 
+}
+
+
 \employer{Goldman Sachs Group, Inc.}{Technology Anaylst Intern, New York, NY}{2013 - 2013}{
 	\begin{achievements}
 	
-	\item{Designed, implemented, and tested a suite to analyze, monitor, and predict database and run-time performance metrics. Developed graphic representations and statistical analysis to display metadata history.}
+	\item{Implemented and tested a suite to analyze and monitor database and run-time performance metrics in order to predict anomalies. Developed graphical representations and statistical analysis to display metadata history.}
 		
-	\item{Worked alongside global Operations Technology teams to integrate my project cross divisionally using proprietary APIs.\kt Java, JDBC, Groovy, R, JUnit, Maven, DB2, R, JMX, JConsole}
+	\item{Designed API to integrate with global Operations Technology teams cross divisonally.\kt Java, JDBC, Groovy, R, JUnit, DB2, JMX, Maven, JIRA}
 
 	\end{achievements} 
 }
 
 
-\employer{Pinch a Penny}{Freelance Software Engineer, Coconut Creek, FL}{2013 - present}{
+\employer{Pinch a Penny}{Freelance Software Engineer, Coconut Creek, FL}{2013 - 2013}{
 	\begin{achievements}
 	
-	\item{Developed proprietary Android applications that enables pool servicers to connect to remote PostgreSQL database allowing CRUD functionality on client information. }
+	\item{Developed proprietary Android application that enables pool servicers to connect to remote PostgreSQL database allowing CRUD functionality on client information.}
 	
-	\item{Created Groovy command line scripts to retrieve customer information and send to servicers via SMS messaging.  \kt Java, Android, Ruby, Groovy, PostgreSQL, JUnit, Apache Email Commons, HTML5, CSS, Rails, Git}
+	\item{Created Groovy command line scripts for retrieving customer information and to send to servicers via SMS messaging, increase servicing volume by 10\%.  \kt Java, Android, Groovy, PostgreSQL, JUnit, Apache Email Commons, HTML5, CSS, Git}
 	
 	\end{achievements}
 }
@@ -88,20 +100,9 @@
 \employer{Follow Your Food!}{Owner and Lead Developer, Gainesville, FL}{2013 - present}{
 	\begin{achievements}
 	
-	\item{Leading a team of student developers to design an interactive recipe application to track food preparation. Code will eventually target the Android OS.}
+	\item{Leading a team of student developers to design an interactive recipe Android application to track food preparation.}
 	
-	\item{Designing an SQLite database to store recipes for many ethnic dishes as well as maintain history and substitutes for ingredients.\kt Java, Android, Hibrenate, SQLite3, Ruby, Rails, HTML5, CSS, JUnit, Git}
-	
-	\end{achievements}
-}
-
-\employer{UF InfoSec/Programming Team}{Team Member, Gainesville, FL}{2011 - 2012}{
-	\begin{achievements}
-	
-	\item{Implemented various exploits in network programming including socket programming and network sniffing.}
-
-\item{Studied algorithms and analytical thinking heavily in preparation to compete at collegiate competitions. 
-\kt C, C++, Python, Java, x86 Intel Assembly, Metasploit, BackTrack}
+	\item{Architecting a SQLite database to store recipes for many ethnic dishes as well as maintain history and substitutes for ingredients.\kt Java, Android, Hibrenate, SQLite3, HTML5, CSS, JUnit, Git}
 	
 	\end{achievements}
 }
@@ -109,8 +110,8 @@
 \employer{UF Dance Marathon}{Hospitality Captain, Gainesville, FL}{2011 - present} {
 	\begin{achievements}
 	
-	\item{Collectively raised over \$750,000 in donations for the Children’s Miracle Network. Lead a team of thirty student volunteers in planning, soliciting, and serving meals to 800+ dancers. }
-	\item{Personally marketed and collected \$20,000 in food donations.}
+	\item{Collectively raised over \$1,528,330 in donations benefitting Children’s Miracle Network Hospitals. Personally marketed and collected \$20,000 in food donations.}
+	\item{Lead a team of thirty student volunteers in planning, soliciting, and serving meals to 1,000+ dancers. }
 
 	\end{achievements}
 }
@@ -126,6 +127,6 @@
 
 
 
-\school{Deerfield Beach High School}{Deerfield Beach, FL}{International Baccalaureate}{Spring 2010}
+\school{International Baccalaureate Diploma Recipient}{Deerfield Beach High School}{Deerfield Beach, FL}{Spring 2010}
 
 \end{document}
