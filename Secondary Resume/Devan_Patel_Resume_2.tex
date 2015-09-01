@@ -47,10 +47,11 @@
 \newcommand{\course}[2]
     {\item \textbf{#1}: #2}
 
-\newcommand{\schoolwithcourses}[4]
-    {\textbf{#1} $\circ$ #2 \\#3 \\ \begin{achievements}\item{Selected Coursework:\\#4}\end{achievements}}
+\newcommand{\schoolwithcourses}[4]{
+    \textbf{#1} $\circ$ #2 \\#3 \\ \begin{achievements}\item{Selected Coursework:\\#4}
+    \end{achievements}
+}
 
-\def\Cpp{{C\nolinebreak[4]\hspace{-.05em}\raisebox{.4ex}{\tiny\bf ++}}}
 \def\kt{\vspace*{2pt}\\\textsc{Technologies:\,}}
 
 \begin{document}
@@ -60,16 +61,6 @@
 {954.695.2250}
 {devanppatel92@gmail.com}
 {devanp92}
-
-% Education
-\section{Education}
-
-\schoolwithcourses{B.S. Computer Science Engineering, Mathematics}{University of Florida}{}{
-\begin{courses}
-    \course{Computer Science}{Computer Network Fundamentals $\cdot$ Operating Systems $\cdot$  Data Structures and  Algorithms $\cdot$ Object Oriented Principles $\cdot$ Design Patterns $\cdot$ Database and Information Systems $\cdot$ Concurrent Programming $\cdot$ Computer Organization $\cdot$ Digital Logic}
-    \course{Mathematics}{Analysis $\cdot$ Complex Analysis $\cdot$ Analysis $\cdot$ Abstract Algebra $\cdot$ Combinatorics $\mathrm{I \& II}$ $\cdot$ Combinatorial Theory $\cdot$ Multivariable Calculus $\cdot$ Probability Theory $\cdot$ Numerical Analysis $\cdot$ Computational Linear Algebra}
-\end{courses}
-}
 
 % Experience
 \section{Experience}
@@ -125,5 +116,15 @@
     \end{achievements}
 }
 
+% Education
+\section{Education}
+
+\schoolwithcourses{B.S. Computer Science Engineering, Mathematics}{University of Florida}{}{
+\begin{courses}
+    \course{Computer Science}{Computer Network Fundamentals $\cdot$ Operating Systems $\cdot$  Data Structures and  Algorithms $\cdot$ Object Oriented Principles $\cdot$ Design Patterns $\cdot$ Database and Information Systems $\cdot$ Concurrent Programming $\cdot$ Computer Organization $\cdot$ Digital Logic}
+    \course{Mathematics}{Analysis $\cdot$ Complex Analysis $\cdot$ Analysis $\cdot$ Abstract Algebra $\cdot$ Combinatorics $\mathrm{I \& II}$ $\cdot$ Combinatorial Theory $\cdot$ Multivariable Calculus $\cdot$ Probability Theory $\cdot$ Numerical Analysis $\cdot$ Computational Linear Algebra}
+\end{courses}
+}
+\nopagebreak
 
 \end{document}
